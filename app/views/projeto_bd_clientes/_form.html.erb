@@ -1,0 +1,52 @@
+<%= form_with(model: projeto_bd_cliente, local: true) do |form| %>
+  <% if projeto_bd_cliente.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(projeto_bd_cliente.errors.count, "error") %> prohibited this projeto_bd_cliente from being saved:</h2>
+
+      <ul>
+        <% projeto_bd_cliente.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :id %>
+    <%= form.number_field :id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nome %>
+    <%= form.text_field :nome %>
+  </div>
+
+  <div class="field">
+    <%= form.label :descricao %>
+    <%= form.text_field :descricao %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dataInicial %>
+    <%= form.date_select :dataInicial %>
+  </div>
+
+  <div class="field">
+    <%= form.label :previsaoEntrega %>
+    <%= form.date_select :previsaoEntrega %>
+  </div>
+
+  <div class="field">
+    <%= form.label :status %>
+    <%= form.text_field :status %>
+  </div>
+
+  <div class="field">
+    <%= form.label :orcamento %>
+    <%= form.text_field :orcamento %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

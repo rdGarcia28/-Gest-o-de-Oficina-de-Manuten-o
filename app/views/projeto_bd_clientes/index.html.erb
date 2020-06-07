@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Projeto Bd Clientes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Nome</th>
+      <th>Descricao</th>
+      <th>Datainicial</th>
+      <th>Previsaoentrega</th>
+      <th>Status</th>
+      <th>Orcamento</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @projeto_bd_clientes.each do |projeto_bd_cliente| %>
+      <tr>
+        <td><%= projeto_bd_cliente.id %></td>
+        <td><%= projeto_bd_cliente.nome %></td>
+        <td><%= projeto_bd_cliente.descricao %></td>
+        <td><%= projeto_bd_cliente.dataInicial %></td>
+        <td><%= projeto_bd_cliente.previsaoEntrega %></td>
+        <td><%= projeto_bd_cliente.status %></td>
+        <td><%= projeto_bd_cliente.orcamento %></td>
+        <td><%= link_to 'Show', projeto_bd_cliente %></td>
+        <td><%= link_to 'Edit', edit_projeto_bd_cliente_path(projeto_bd_cliente) %></td>
+        <td><%= link_to 'Destroy', projeto_bd_cliente, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Projeto Bd Cliente', new_projeto_bd_cliente_path %>

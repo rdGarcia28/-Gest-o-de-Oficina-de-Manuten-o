@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: 1
+  nome: MyString
+  descricao: MyString
+  dataInicial: 2020-06-07
+  previsaoEntrega: 2020-06-07
+  status: MyString
+  orcamento: 1.5
+
+two:
+  id: 1
+  nome: MyString
+  descricao: MyString
+  dataInicial: 2020-06-07
+  previsaoEntrega: 2020-06-07
+  status: MyString
+  orcamento: 1.5

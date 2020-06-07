@@ -1,0 +1,2 @@
+class ProjetoBdEstoque < ApplicationRecord
+end

@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: 1
+  componente: MyString
+  quantidade: 1
+  valor: 1.5
+
+two:
+  id: 1
+  componente: MyString
+  quantidade: 1
+  valor: 1.5

@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Projeto Bd Estoques</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Componente</th>
+      <th>Quantidade</th>
+      <th>Valor</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @projeto_bd_estoques.each do |projeto_bd_estoque| %>
+      <tr>
+        <td><%= projeto_bd_estoque.id %></td>
+        <td><%= projeto_bd_estoque.componente %></td>
+        <td><%= projeto_bd_estoque.quantidade %></td>
+        <td><%= projeto_bd_estoque.valor %></td>
+        <td><%= link_to 'Show', projeto_bd_estoque %></td>
+        <td><%= link_to 'Edit', edit_projeto_bd_estoque_path(projeto_bd_estoque) %></td>
+        <td><%= link_to 'Destroy', projeto_bd_estoque, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Projeto Bd Estoque', new_projeto_bd_estoque_path %>

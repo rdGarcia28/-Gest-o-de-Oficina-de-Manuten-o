@@ -1,0 +1,2 @@
+class ProjetoBdCliente < ApplicationRecord
+end

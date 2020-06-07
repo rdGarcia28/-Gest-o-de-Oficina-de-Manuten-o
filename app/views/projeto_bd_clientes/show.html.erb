@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id:</strong>
+  <%= @projeto_bd_cliente.id %>
+</p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @projeto_bd_cliente.nome %>
+</p>
+
+<p>
+  <strong>Descricao:</strong>
+  <%= @projeto_bd_cliente.descricao %>
+</p>
+
+<p>
+  <strong>Datainicial:</strong>
+  <%= @projeto_bd_cliente.dataInicial %>
+</p>
+
+<p>
+  <strong>Previsaoentrega:</strong>
+  <%= @projeto_bd_cliente.previsaoEntrega %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @projeto_bd_cliente.status %>
+</p>
+
+<p>
+  <strong>Orcamento:</strong>
+  <%= @projeto_bd_cliente.orcamento %>
+</p>
+
+<%= link_to 'Edit', edit_projeto_bd_cliente_path(@projeto_bd_cliente) %> |
+<%= link_to 'Back', projeto_bd_clientes_path %>
